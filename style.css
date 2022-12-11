@@ -717,30 +717,82 @@ p {
 }
 
 
-.video-area .video-play-btn a {
-    width: 80px;
-    height: 80px;
-    background-color: #fb397d;
-    color: #fff;
-    text-align: center;
-    display: block;
-    font-size: 36px;
-    line-height: 80px;
-    padding-left: 5px;
-    border-radius: 50%;
-    top: 50%;
-    position: absolute;
-    left: 50%;
+.video-area .video-play-btn{
+    height:0;
+    
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     z-index: 3;
+}
+.video-play-btn iframe{
+    position: absolute;
+    top:52%;
+    left:51%;
+    width:98%;
+    box-shadow: 0px 2px 20px gray;
+    border-radius: 20px;
+    height:98%;
 }
 
 .video-area .video-play-btn a:hover {
     background-color: #a865e1;
     color: #fff;
 }
+
+
+@media only screen and (max-width:780px){
+    .video-play-btn iframe{
+        position: absolute;
+        top:52%;
+        left:51%;
+        width:98%;
+        box-shadow: 0px 2px 20px gray;
+        border-radius: 20px;
+        height:80%;   
+    }
+}
+
+@media only screen and (max-width:500px){
+    .video-play-btn iframe{
+        position: absolute;
+        top:55%;
+        left:52%;
+        width:96%;
+        box-shadow: 0px 2px 20px gray;
+        border-radius: 20px;
+        height:100%;   
+    }
+}
+
+
+@media only screen and (max-width:380px){
+    .video-play-btn iframe{
+        position: absolute;
+        top:53%;
+        left:51%;
+        width:97%;
+        box-shadow: 0px 2px 20px gray;
+        border-radius: 20px;
+        height:120%;   
+    }
+}
+
+@media only screen and (max-width:330px){
+    .video-play-btn iframe{
+        position: absolute;
+        top:56%;
+        left:51%;
+        width:97%;
+        box-shadow: 0px 2px 20px gray;
+        border-radius: 20px;
+        height:140%;   
+    }
+}
+
 
 /* --------------------------
 :: 7.0 Cool Facts Area CSS
